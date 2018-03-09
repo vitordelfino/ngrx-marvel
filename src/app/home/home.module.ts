@@ -1,12 +1,17 @@
+
+
+import { MaterialModule } from './../shared/material/material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { MaterialModule } from '../shared/material/material.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    HomeRoutingModule,
   ],
   exports: [
     HomeComponent
