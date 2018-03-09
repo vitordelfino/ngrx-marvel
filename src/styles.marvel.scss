@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$marvel-app-primary: mat-palette($mat-blue-grey, 900);
+$marvel-app-accent:  mat-palette($mat-pink, A700, A200, A400);
+
+$marvel-app-warn:    mat-palette($mat-red);
+
+$marvel-app-theme: mat-light-theme($marvel-app-primary, $marvel-app-accent, $marvel-app-warn);
+@include angular-material-theme($marvel-app-theme);
+
+
+.dark-theme {
+  $marvel_dark-app-primary: mat-palette($mat-blue-grey, 900);
+  $marvel_dark-app-accent:  mat-palette($mat-pink, A700, A200, A400);
+
+  $marvel_dark-app-warn:    mat-palette($mat-red);
+
+  $marvel_dark-app-theme: mat-dark-theme($marvel_dark-app-primary, $marvel_dark-app-accent, $marvel_dark-app-warn);
+  @include angular-material-theme($marvel_dark-app-theme);
+}
