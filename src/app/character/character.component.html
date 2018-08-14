@@ -1,23 +1,20 @@
-<!-- <p>
-  {{ characters$ | async | json }}
-</p> -->
 <div>
   <img [src]="(characters$ | async)[0].photo" alt="">
 </div>
 
-<mat-card>
+<mat-card (click)="dispatchNewCharacter()">
   {{ (characters$ | async)[0].name }}
 </mat-card>
 
-<mat-card>
-  {{ (characters$ | async)[0].name }}
+<mat-card (click)="dispatchNewCharacter()">
+  {{ (characters$ | async)[1].name }}
 </mat-card>
 
-<mat-card>
-  {{ (characters$ | async)[0].name }}
+<mat-card (click)="dispatchNewCharacter()">
+  {{ (characters$ | async)[2].name }}
 </mat-card>
 
-<mat-card>
-  {{ (characters$ | async)[0].name }}
+<mat-card (click)="dispatchNewCharacter()">
+  {{ (characters$ | async)[3].name }}
 </mat-card>
 

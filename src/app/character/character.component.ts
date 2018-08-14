@@ -49,4 +49,8 @@ export class CharacterComponent implements OnInit, OnDestroy {
     }
     return arra1;
   }
+
+  dispatchNewCharacter() {
+    this.store.dispatch(new CharacterAction());
+  }
 }

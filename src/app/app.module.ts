@@ -21,6 +21,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { reducers } from './reducers';
 import { CharacterEffects } from './effects/character.effects';
 
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +40,10 @@ import { CharacterEffects } from './effects/character.effects';
     StoreModule.forRoot(reducers),
     EffectsModule.forRoot([CharacterEffects]),
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: environment.production, // Restrict extension to log-only mode
+    }),
   ],
   providers: [CharacterService],
   bootstrap: [AppComponent]
