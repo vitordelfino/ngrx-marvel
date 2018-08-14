@@ -1,3 +1,23 @@
-<p>
-  {{ characters$ | json }}
-</p>
+<!-- <p>
+  {{ characters$ | async | json }}
+</p> -->
+<div>
+  <img [src]="(characters$ | async)[0].photo" alt="">
+</div>
+
+<mat-card>
+  {{ (characters$ | async)[0].name }}
+</mat-card>
+
+<mat-card>
+  {{ (characters$ | async)[0].name }}
+</mat-card>
+
+<mat-card>
+  {{ (characters$ | async)[0].name }}
+</mat-card>
+
+<mat-card>
+  {{ (characters$ | async)[0].name }}
+</mat-card>
+

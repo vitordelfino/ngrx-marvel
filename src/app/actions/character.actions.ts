@@ -13,7 +13,9 @@ export class CharacterAction implements Action {
 export class CharacterRequest implements Action {
   readonly type = CharacterActionTypes.CHARACTERREQUEST;
 
-  constructor(public payload: Character[]) {}
+  constructor(public payload: Character[]) {
+    console.log('payload', payload);
+  }
 }
 
 export type CharacterActions = CharacterAction | CharacterRequest;

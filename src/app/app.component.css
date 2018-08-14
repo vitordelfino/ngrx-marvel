@@ -1,48 +1,10 @@
-
 div {
-  max-width: 700px;
-  margin: auto;
-}
-mat-card {
-  max-width: 100%;
-  /* margin: auto; */
-  text-align: center;
+  padding: 5%;
 }
 
-img {
-  float: left;
-  /* padding-top: 2%; */
-  padding-right: 6%;
-}
-
-
-.text {
-  float: left;
-  text-align: center;
-  /* font-size: 16px;
-  letter-spacing: .3px;
-  line-height: 24px; */
-  font-weight: 550;
-}
-
-.get-started {
-}
-
-button {
-  margin: 3%;
-  text-transform: uppercase;
-  border-radius: 48px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 40px;
-}
-
-@media (max-width: 600px) {
-  img {
-    float: none;
-  }
-
-  .text {
-    float: none;
-  }
+.done {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
 }
